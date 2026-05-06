@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>白无常AI 图片提示词与生图助手隐私政策</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 32px 18px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      line-height: 1.75;
+      color: #1f2937;
+      background: #f8fafc;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      background: #ffffff;
+    }
+
+    h1, h2 {
+      line-height: 1.3;
+      color: #111827;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 30px;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 20px;
+    }
+
+    p, li {
+      font-size: 15px;
+    }
+
+    code {
+      padding: 2px 5px;
+      border-radius: 5px;
+      background: #eef2ff;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>白无常AI 图片提示词与生图助手隐私政策</h1>
+    <p>生效日期：2026 年 5 月 6 日</p>
+
+    <p>白无常AI 图片提示词与生图助手是一款 Chrome 扩展，界面品牌为 AIxLab。本政策说明扩展如何处理用户数据。</p>
+
+    <h2>我们处理哪些数据</h2>
+    <ul>
+      <li>用户在设置页主动填写的阿里云百炼 DashScope API Key。</li>
+      <li>用户配置的 Qwen-VL、万相 2.7 模型名称和 API Base URL。</li>
+      <li>用户主动通过右键菜单选择的网页图片 URL、页面 URL、页面标题和选择时间。</li>
+      <li>用户选择图片后生成或编辑的中文提示词、English Prompt 和生成图片结果。</li>
+    </ul>
+
+    <h2>数据存储方式</h2>
+    <p>API Key、模型配置和当前选择的图片信息保存在用户浏览器本地的 <code>chrome.storage.local</code>。扩展不使用自建云端服务器保存这些配置。用户可以通过 Chrome 的扩展管理页面清除扩展数据，也可以卸载扩展删除本地数据。</p>
+
+    <h2>数据如何被使用</h2>
+    <p>扩展仅在用户主动操作时使用数据：当用户右键选择网页图片并点击提取或生成按钮后，扩展会读取该图片，并调用用户配置的 DashScope / 阿里云百炼 API，用于完成图片提示词提取和参考图生图。</p>
+
+    <h2>数据共享对象</h2>
+    <p>为了提供核心功能，用户选择的图片内容、提示词和必要的 API 请求参数会发送到用户配置的 DashScope / 阿里云百炼 API 端点。扩展不会将用户数据出售给第三方，不会用于广告投放，不会进行跨站追踪。</p>
+
+    <h2>浏览权限说明</h2>
+    <p>扩展请求 HTTPS 网页资源访问权限，是为了在用户主动通过右键菜单选择图片后读取该图片资源。扩展不会自动扫描网页内容，不会收集完整浏览历史。</p>
+
+    <h2>远程代码说明</h2>
+    <p>扩展代码随扩展包一起发布，不从远程服务器加载或执行 JavaScript 代码。扩展使用网络请求仅用于调用用户配置的 AI API 服务和读取用户主动选择的图片资源。</p>
+
+    <h2>儿童与敏感内容</h2>
+    <p>扩展面向普通生产力和创作辅助场景，不以儿童为目标用户。用户应确保其上传、分析和生成的内容符合法律法规、Chrome Web Store 政策以及所使用 AI 服务提供商的服务条款。</p>
+
+    <h2>用户控制</h2>
+    <p>用户可以随时打开扩展设置页修改或清空 API Key。用户也可以通过 Chrome 扩展管理页面清除本扩展的本地数据，或直接卸载扩展。</p>
+
+    <h2>政策更新</h2>
+    <p>如果扩展的数据处理方式发生变化，本隐私政策会同步更新，并在 Chrome Web Store 上架资料中使用最新版本的公开链接。</p>
+
+    <h2>联系我们</h2>
+    <p>如需咨询隐私问题，请通过 Chrome Web Store 开发者资料中提供的联系方式联系开发者。</p>
+  </main>
+</body>
+</html>
